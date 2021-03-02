@@ -58,6 +58,10 @@ header {
   position: relative;
 
   .cont-title {
+    color: #101b52;
+    background: -webkit-linear-gradient(0deg, #1165bb, #a862c3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: 'Lexend Exa', sans-serif;
     text-align: center;
     position: absolute;
@@ -66,13 +70,19 @@ header {
     margin: 0;
   }
   .sub-title {
+    color: #101b52;
+    background: -webkit-linear-gradient(0deg, #2e3a73, #1c9aea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: 'Lexend Exa', sans-serif;
-    margin-top: 10px;
+    margin: 0;
   }
   &#offline img {
     max-width: 150px;
   }
-  &#comic img,
+  &#comic img {
+    width: 100%;
+  }
   &#game img {
     max-width: 80vw;
     width: 220px;
@@ -101,4 +111,7 @@ header {
 footer {
   margin: 0;
   padding: 0 20px 20px;
+}
+.mt10 {
+  margin-top: 10px !important;
 }
