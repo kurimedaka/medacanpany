@@ -1,0 +1,96 @@
+body {
+  background: rgb(249,208,255);
+  background: linear-gradient(0deg, rgba(249,208,255,0.33657212885154064) 0%, rgba(153,208,255,1) 100%);line-height: 1.5;
+  margin: 0;
+  position: relative;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+a {
+  color: #39bfff;
+  text-decoration: underline;
+}
+p {
+  margin-bottom: 0;
+}
+header {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 15px 10px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  .site-title {
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: calc(2.4rem + ((1vw - 0.64rem) * 2.1429));
+    margin-top: -10px;
+  }
+  .sns {
+    float: left;
+    li {
+      display: inline-block;
+      &:not(:last-of-type) {
+        margin-right: 8px;
+      }
+    }
+    img {
+      width: 40px;
+    }
+  }
+}
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  &:nth-of-type(odd) {
+    background: #fff;
+    .cont-title,
+    .sub-title {
+      color: #2c38c7;
+    }
+  }
+  &:nth-of-type(even) {
+    background: rgb(0,35,36);
+    background: linear-gradient(90deg, rgba(0,35,36,0.742734593837535) 0%, rgba(0,43,97,1) 0%, rgba(45,0,62,1) 100%);
+    color: #fff;
+  }
+  .cont-title {
+    font-family: 'Lexend Exa', sans-serif;
+    text-align: center;
+  }
+  .sub-title {
+    font-family: 'Lexend Exa', sans-serif;
+    margin-top: 10px;
+  }
+  &#offline img {
+    max-width: 150px;
+  }
+  &#comic img,
+  &#game img {
+    max-width: 80vw;
+    width: 220px;
+  }
+  &#link a {
+    display: inline-block;
+  }
+}
+.top-image {
+  background: url(../image/top-image.jpg) no-repeat center top;
+  background-size: cover;
+  height: 100vh;
+}
+.row {
+  margin-bottom: 20px;
+}
+footer {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
