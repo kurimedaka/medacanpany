@@ -1,6 +1,7 @@
 body {
   background: rgb(249,208,255);
   background: linear-gradient(0deg, rgba(249,208,255,0.33657212885154064) 0%, rgba(153,208,255,1) 100%);line-height: 1.5;
+  color: #333;
   height: 100%;
   margin: 0;
   position: relative;
@@ -15,6 +16,9 @@ li {
 a {
   color: #39bfff;
   text-decoration: underline;
+  &:hover {
+    color: #678aca;
+  }
 }
 p {
   margin-bottom: 0;
@@ -23,7 +27,7 @@ header {
   color: #fff;
   display: flex;
   justify-content: space-between;
-  right: 0;
+  right: 10px;
   padding: 15px 10px;
   position: fixed;
   top: 0;
@@ -57,6 +61,7 @@ header {
     top: -16px;
     right: 20px;
     margin: 0;
+    user-select: none;
   }
   .sub-title {
     color: #101b52;
@@ -65,6 +70,7 @@ header {
     -webkit-text-fill-color: transparent;
     font-family: 'Lexend Exa', sans-serif;
     margin: 0;
+    user-select: none;
   }
   &#offline img {
     max-width: 150px;
@@ -208,5 +214,8 @@ footer {
   }
   #comic div[class^=c_]:before {
     padding-top: 40%;
+  }
+  footer {
+    padding: 0 10px 20px;
   }
 }
