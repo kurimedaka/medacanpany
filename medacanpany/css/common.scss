@@ -80,15 +80,58 @@ header {
   &#offline img {
     max-width: 150px;
   }
-  &#comic img {
-    width: 100%;
-  }
   &#game img {
     max-width: 80vw;
     width: 220px;
   }
   &#link a {
     display: inline-block;
+  }
+}
+#comic {
+  div[class^=c_] {
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0 1px 1px rgba(12, 14, 39, 0.4);
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    &:hover {
+      filter: brightness(80%);
+    }
+    &:before {
+      content:"";
+      display: block;
+      padding-top: 25%;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    span {
+      font-size: 12px;
+      font-weight: bold;
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      text-shadow:1px 1px 0 #0f216f, -1px -1px 0 #0f216f,
+              -1px 1px 0 #0f216f, 1px -1px 0 #0f216f,
+              0px 1px 0 #0f216f,  0-1px 0 #0f216f,
+              -1px 0 0 #0f216f, 1px 0 0 #0f216f;
+    }
+  }
+  .c_kuzu {
+    background: url(../image/b-kuzu.png) no-repeat;
+  }
+  .c_kabu {
+    background: url(../image/b-kabu.png) no-repeat;
+  }
+  .c_nichijo {
+    background: url(../image/b-nichijo.png) no-repeat;
+  }
+  .c_7tumi {
+    background: url(../image/b-7tumi.png) no-repeat;
   }
 }
 .top-image {
@@ -110,7 +153,7 @@ header {
 }
 footer {
   margin: 0;
-  padding: 0 20px 20px;
+  padding: 0 40px 20px;
 }
 .mt10 {
   margin-top: 10px !important;
