@@ -161,6 +161,9 @@ header {
               -1px 0 0 #0f216f, 1px 0 0 #0f216f;
     }
   }
+  .c_shotaoni {
+    background: url(../image/b-shotaoni.png) no-repeat;
+  }
   .c_kuzu {
     background: url(../image/b-kuzu.png) no-repeat;
   }
@@ -217,5 +220,18 @@ footer {
   }
   footer {
     padding: 0 10px 20px;
+  }
+}
+@media screen and (min-width:481px) {
+  #offline {
+    .book_container {
+      display: flex;
+    }
+    .book_image {
+      margin-right: 10px;
+    }
+    .off_text p {
+      margin-top: 0;
+    }
   }
 }
